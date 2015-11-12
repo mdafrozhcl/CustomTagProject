@@ -1,0 +1,56 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>Example TLD with Body</short-name>
+	<tag>
+		<name>Student</name>
+		<tag-class>com.afroz.custom.tags.Student</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>firstName</name>
+			<type>java.lang.String</type>
+			<fragment>false</fragment>
+		</attribute>
+		<attribute>
+			<name>age</name>
+			
+			<type>java.lang.Integer</type>
+			<fragment>false</fragment>
+		</attribute>
+		<attribute>
+			<name>height</name>
+			
+			<type>java.lang.Double</type>
+			<fragment>false</fragment>
+		</attribute>
+	</tag>
+	<tag>
+		<name>Book</name>
+		<tag-class>com.afroz.custom.tags.Book</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>name</name>
+			<type>java.lang.String</type>
+			<required>true</required>
+			<fragment>false</fragment>
+		</attribute>
+		<attribute>
+			<name>number</name>
+			<required>true</required>
+			<type>java.lang.Integer</type>
+			<fragment>false</fragment>
+		</attribute>
+		<attribute>
+			<name>price</name>
+			<required>true</required>
+			<type>java.lang.Double</type>
+			<fragment>false</fragment>
+		</attribute>
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+			<fragment>false</fragment>
+		</attribute>
+	</tag>
+</taglib>
